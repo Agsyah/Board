@@ -1,8 +1,8 @@
 # Board
 Dynamic Board System
 
-Nama Fitur: Dynamic Board System
-Nama Script: board.pwn
+- Nama Fitur: Dynamic Board System
+- Nama Script: board.pwn
 
 #Keterangan
 Fitur ini yaitu fitur untuk meletakkan tulisan layaknya sebuah papan, jadi kita bisa merubah teks yang di inginkan, object yang di gunakan lebih dari 1, kamu dapat memilih object lainnya yang tersedia di Filterscript ini.
