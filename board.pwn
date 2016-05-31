@@ -18,9 +18,9 @@
 #include    <sscanf2>
 #include    <ZCMD>
 
-#define 	MYSQL_HOST 		"127.0.0.1" //Isi host databasenya, seperti: 127.0.0.1.
-#define 	MYSQL_USER 		"root" //Isi user yang ada di database MySql.
-#define 	MYSQL_DATABASE 	"business" //Masukkan nama database yang di buat.
+#define 	MYSQL_HOST 		"" //Isi host databasenya, seperti: 127.0.0.1.
+#define 	MYSQL_USER 		"" //Isi user yang ada di database MySql.
+#define 	MYSQL_DATABASE 	"" //Masukkan nama database yang di buat.
 #define 	MYSQL_PASSWORD 	"" //Password database
 
 #define COLOR_GREY	(0xAFAFAFFF)
