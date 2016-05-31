@@ -113,7 +113,11 @@ public OnFilterScriptInit()
 		if(fexist(folder))
 		{
 		    INI_ParseFile(folder,"LoadBoard_data",.bExtra = true, .extra = i);
-		    printf("Board %d telah berhasil di Load !");
+		    Board_Create(BoardData[i][bName], BoardData[i][bX], BoardData[i][bY],
+			BoardData[i][bZ], BoardData[i][bRX], BoardData[i][bRY], BoardData[i][bRZ], BoardData[i][bFontText],
+			BoardData[i][bFontSize], BoardData[i][bFontColor], BoardData[i][bBackColor], BoardData[i][bObjectModel],
+			BoardData[i][bMaterialSize]);
+		    printf("Board %d telah berhasil di Load !", i);
 		}
 	}
 	return 1;
@@ -142,8 +146,6 @@ public LoadBoard_data(id, name[] ,value[])
 	INI_Int("bMaterialSize",BoardData[id][bMaterialSize]);
 	INI_Int("bObjectModel",BoardData[id][bObjectModel]);
 	INI_String("bFontText",BoardData[id][bFontText], 28);
-	
-	Board_Refresh(id);
 	return 1;
 }
 
@@ -337,7 +339,7 @@ CMD:createboard(playerid, params[])
     if (strlen(name) > 128)
     	return SendErrorMessage(playerid, "Text untuk board terlalu panjang.");
 
-	id = Board_Create(name, x, y, z, 0, 0, angle);
+	id = Board_Create(name, x, y, z, 0, 0, (angle-90));
 
 	if (id == -1)
 	    return SendErrorMessage(playerid, "Board telah membatasi batas yang di tentukan.");
