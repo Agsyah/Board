@@ -18,8 +18,8 @@ Fitur ini yaitu fitur untuk meletakkan tulisan layaknya sebuah papan, jadi kita 
 - Object yang di gunakan tidak hanya 1
 
 #Keterangan Format
-#FFFFFF ;Untuk contoh warna putih di text #FFFFFF Ini putih
-\n ;Untuk membuat line baru di text
+- #FFFFFF ;Untuk contoh warna putih di text #FFFFFF Ini putih
+- \n ;Untuk membuat line baru di text
 
 #Download
 https://github.com/Agsyah/Board
